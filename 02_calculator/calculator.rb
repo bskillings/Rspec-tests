@@ -21,10 +21,19 @@ def multiply(*numbers)
 	return numbers.inject{|product, number| product * number}
 end
 
-def power(number, exponenent)
-
+def power(number, exponent)
+	return number ** exponent
 end
 
-def factorial(numbers)
-
+def factorial(number)
+	if number == 0
+		return 0
+	end
+	current_number = number - 1
+	product = number
+	while current_number > 0
+		product *= current_number
+		current_number -= 1
+	end
+	return product
 end	
