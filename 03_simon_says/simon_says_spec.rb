@@ -92,5 +92,4 @@ describe "Simon says" do
       titleize("the bridge over the river kwai").should == "The Bridge over the River Kwai"
     end
   end
-
 end
